@@ -22,7 +22,6 @@ int main()
     char targetChar;
     int validCounter = 0;
     int validCounter2 = 0;
-    int factorProd;
     int scanSuccess;
     FILE *inFptr;
     FILE *outFptr;
