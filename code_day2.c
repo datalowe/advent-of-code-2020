@@ -62,8 +62,7 @@ int main()
     fclose(inFptr);
 
     outFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/output_day2.txt", "w");
-    fprintf(outFptr, "%d\n", validCounter);
-    fprintf(outFptr, "%d\n", validCounter2);
+    fprintf(outFptr, "%d\n%d\n", validCounter, validCounter2);
     fclose(outFptr);
 
     return 0;
