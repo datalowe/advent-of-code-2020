@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void printArr(char* inArr, int len);
+
 int checkValid(
     int rangeStart, int rangeEnd,
     char checkChar, char checkArr[],
