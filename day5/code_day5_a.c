@@ -20,8 +20,6 @@ int main() {
 }
 
 int solve() {
-    // array that will hold all boarding pass seat ID's
-    int seatIds[NUM_PASSES];
     // counter for number of seat ID's that have been added so far
     int idCounter = 0;
     // variable for holding the most recently calculated seat ID
@@ -88,7 +86,6 @@ int solve() {
             if (lastId > maxId) {
                 maxId = lastId;
             }
-            seatIds[idCounter] = lastId;
             idCounter += 1;
             rangeStart = MIN_ROW;
             rangeEnd = MAX_ROW;
