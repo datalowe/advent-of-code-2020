@@ -6,12 +6,6 @@
 # define INPUT_COL_WIDTH 31
 # define N_STEPPERS 5
 
-// declare functions
-void printArr(char * inArr, int len);
-int checkTree(
-    int xPos, int yPos,
-    char * checkArr
-);
 
 int main()
 {
@@ -38,7 +32,7 @@ int main()
     FILE *outFptr;
 
     // open connection to input file
-    inFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/input_day3.txt", "r");
+    inFptr = fopen("input_day3.txt", "r");
 
     if (inFptr == NULL) {
         printf("Error opening file");
@@ -73,7 +67,7 @@ int main()
     }
     fclose(inFptr);
 
-    outFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/output_day3_b.txt", "w");
+    outFptr = fopen("output_day3_b.txt", "w");
 
     for (int i = 0; i < N_STEPPERS; i++) {
         treeProduct *= treeCounters[i];

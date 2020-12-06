@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void printArr(int* inArr, int len); 
 void findSumVals(int* inArr, int* outArr, int maxIndex);
 void findSumVals3(int* inArr, int* outArr, int maxIndex);
 int prodArr(int passArr[], int len);
@@ -17,7 +16,7 @@ int main()
     FILE *inFptr;
     FILE *outFptr;
 
-    if ( (inFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/input_day1.txt", "r")) == NULL) {
+    if ( (inFptr = fopen("input_day1.txt", "r")) == NULL) {
     printf("Error opening file");
 
     exit(1);
@@ -33,7 +32,7 @@ int main()
 
     findSumVals(nums, factorArr, numCounter);
 
-    outFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/output_day1.txt", "w");
+    outFptr = fopen("output_day1.txt", "w");
 
     factorProd = prodArr(factorArr, 2);
 
@@ -100,13 +99,6 @@ void findSumVals3(int inArr[], int outArr[], int maxIndex) {
         if (foundIt) {
             break;
         }
-    }
-}
-
-void printArr(int passArr[], int len) {
-    int i;
-    for (i = 0; i < len; i++) {
-        printf("%d\n", passArr[i]);
     }
 }
 

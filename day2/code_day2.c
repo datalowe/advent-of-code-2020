@@ -26,7 +26,7 @@ int main()
     FILE *inFptr;
     FILE *outFptr;
 
-    inFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/input_day2.txt", "r");
+    inFptr = fopen("input_day2.txt", "r");
 
     if (inFptr == NULL) {
         printf("Error opening file");
@@ -61,7 +61,7 @@ int main()
     }
     fclose(inFptr);
 
-    outFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/output_day2.txt", "w");
+    outFptr = fopen("output_day2.txt", "w");
     fprintf(outFptr, "%d\n%d\n", validCounter, validCounter2);
     fclose(outFptr);
 

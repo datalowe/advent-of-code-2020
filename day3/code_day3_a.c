@@ -7,12 +7,6 @@
 # define R_STEP_SIZE 3
 # define D_STEP_SIZE 1
 
-// declare functions
-void printArr(char * inArr, int len);
-int checkTree(
-    int xPos, int yPos,
-    char * checkArr
-);
 
 int main()
 {
@@ -33,7 +27,7 @@ int main()
     FILE *outFptr;
 
     // open connection to input file
-    inFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/input_day3.txt", "r");
+    inFptr = fopen("input_day3.txt", "r");
 
     if (inFptr == NULL) {
         printf("Error opening file");
@@ -66,7 +60,7 @@ int main()
     }
     fclose(inFptr);
 
-    outFptr = fopen("/Users/lowe/Documents/Programmering/misc_code/advent_of_code/aoc_2020/output_day3_a.txt", "w");
+    outFptr = fopen("output_day3_a.txt", "w");
 
     fprintf(outFptr, "%d\n", treeCounter);
     fclose(outFptr);
