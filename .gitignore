@@ -2,3 +2,4 @@ a.out
 output_day*
 __pycache__/
 scraps_notes.txt
+*.class
